@@ -1,0 +1,31 @@
+{
+  "installation": {
+    "version": "21.1.2"
+  },
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "release": {
+    "version": {
+      "conventionalCommits": true,
+      "git": {
+        "commit": false,
+        "stageChanges": false,
+        "tag": false
+      },
+      "manifestRootsToUpdate": ["dist/{projectRoot}"]
+    },
+    "changelog": {
+      "projectChangelogs": false
+    }
+  },
+  "targetDefaults": {
+    "build": {
+      "command": "mkdir -p dist/{projectRoot} && cp {projectRoot}/package.json dist/{projectRoot}/package.json",
+      "cwd": "{workspaceRoot}"
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  }
+}
