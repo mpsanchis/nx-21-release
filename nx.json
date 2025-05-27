@@ -4,6 +4,8 @@
   },
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "release": {
+    "projectsRelationship": "independent",
+    "releaseTagPattern": "{projectName}@{version}",
     "version": {
       "conventionalCommits": true,
       "manifestRootsToUpdate": [
