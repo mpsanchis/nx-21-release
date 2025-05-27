@@ -6,12 +6,12 @@
   "release": {
     "version": {
       "conventionalCommits": true,
-      "git": {
-        "commit": false,
-        "stageChanges": false,
-        "tag": false
-      },
       "manifestRootsToUpdate": ["dist/{projectRoot}"]
+    },
+    "git": {
+      "commit": false,
+      "stageChanges": false,
+      "tag": false
     },
     "changelog": {
       "projectChangelogs": false
@@ -23,8 +23,9 @@
       "cwd": "{workspaceRoot}"
     },
     "nx-release-publish": {
+      "executor": "nx:run-commands",
       "options": {
-        "packageRoot": "dist/{projectRoot}"
+        "command": "echo publishing {projectName}"
       }
     }
   }

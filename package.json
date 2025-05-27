@@ -1,6 +1,15 @@
 {
+  "name": "source",
   "devDependencies": {
-    "nx": "21.2.0-beta.3",
-    "@nx/js": "21.2.0-beta.3"
+    "@nx/js": "21.4.0",
+    "nx": "21.4.0",
+    "ts-node": "^10.9.2"
+  },
+  "nx": {
+    "targets": {
+      "release-forge": {
+        "command": "npx ts-node tools/scripts/release.ts"
+      }
+    }
   }
 }

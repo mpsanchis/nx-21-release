@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Nx Release Version",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/node_modules/.bin/nx",
+      "args": ["release", "version", "--verbose"],
+      "outFiles": [
+        "${workspaceFolder}/node_modules/nx/**/*.js"
+      ]
+    }
+  ]
+}
