@@ -1,12 +1,14 @@
 {
   "installation": {
-    "version": "21.1.2"
+    "version": "22.4.2"
   },
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "release": {
     "version": {
       "conventionalCommits": true,
-      "manifestRootsToUpdate": ["dist/{projectRoot}"]
+      "manifestRootsToUpdate": [
+        "dist/{projectRoot}"
+      ]
     },
     "git": {
       "commit": false,
