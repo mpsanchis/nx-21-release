@@ -4,6 +4,18 @@
   },
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "release": {
+    "groups": {
+      "commons": {
+        "projects": ["commons/*"],
+        "projectsRelationship": "independent",
+        "releaseTagPattern": "{projectName}@{version}"
+      },
+      "other": {
+        "projects": ["apps/*", "libs/*"],
+        "projectsRelationship": "fixed",
+        "releaseTagPattern": "apps-libs@{version}"
+      }
+    },
     "version": {
       "conventionalCommits": true,
       "manifestRootsToUpdate": [
