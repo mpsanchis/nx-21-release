@@ -2,6 +2,6 @@
   "name": "app1",
   "version": "0.0.0",
   "dependencies": {
-    "lib1": "0.0.0"
+    "commons1": "0.0.0"
   }
 }
