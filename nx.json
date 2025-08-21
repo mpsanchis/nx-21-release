@@ -17,6 +17,20 @@
     },
     "changelog": {
       "projectChangelogs": false
+    },
+    "groups": {
+      "apps": {
+        "projects": "apps/**",
+        "releaseTagPattern": "apps@{version}"
+      },
+      "libs": {
+        "projects": "libs/**",
+        "releaseTagPattern": "libs@{version}"
+      },
+      "commons": {
+        "projects": "commons/**",
+        "releaseTagPattern": "commons@{version}"
+      }
     }
   },
   "targetDefaults": {
