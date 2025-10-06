@@ -1,6 +1,6 @@
 {
   "installation": {
-    "version": "21.1.2"
+    "version": "21.6.3"
   },
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "release": {
@@ -31,7 +31,9 @@
     },
     "version": {
       "conventionalCommits": true,
-      "manifestRootsToUpdate": ["dist/{projectRoot}"]
+      "manifestRootsToUpdate": [
+        "dist/{projectRoot}"
+      ]
     },
     "git": {
       "commit": false,
